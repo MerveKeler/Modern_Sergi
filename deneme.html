@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>İstanbul Modern Sanat Sergisi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+        }
+        .nav-link {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #000000;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+        .nav-link-active {
+            color: #f87171;
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .search-input::placeholder {
+            font-size: 14px;
+            font-family: "Roboto Condensed", sans-serif;
+            color: #9ca3af;
+        }
+        .btn-sergi {
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            background-color: #6b7280;
+            color: white;
+            padding: 4px 12px;
+            text-align: center;
+            display: inline-block;
+        }
+        .btn-sergi:hover {
+            background-color: #4b5563;
+        }
+        .section-title {
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            background-color: #1f2937;
+            color: white;
+            padding: 4px 8px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .desc-text {
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #6b7280;
+            margin-top: 8px;
+            margin-bottom: 12px;
+        }
+        .title-text {
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin-bottom: 4px;
+            color: #111827;
+        }
+        .subtitle-text {
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .sergi-resim {
+            height: 200px;
+            object-fit: cover;
+        }
+        .social-icons a i {
+            font-size: 1.5rem; /* 24px */
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover i {
+            color: #000000;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="max-w-5xl mx-auto px-4 pt-6">
+        <!-- Logo and header text -->
+        <div class="flex flex-col items-center mb-4">
+            <img alt="Modern minimalist logo of İstanbul Modern Sanat Galerisi" class="logo" src="https://storage.googleapis.com/a1aa/image/855d55c7-a41e-424b-1835-c28a246c4b6b.jpg" />
+            <p class="text-sm text-gray-600 mt-1 font-['Roboto_Condensed']">İstanbul Modern Sanat Galerisi</p>
+        </div>
+        <!-- Search and social + language -->
+        <div class="flex justify-between items-center mb-4 text-sm text-gray-600 font-['Roboto_Condensed']">
+            <div class="flex items-center space-x-2">
+                <button aria-label="Select language" class="flex items-center border border-gray-300 rounded-full px-3 py-1 text-sm text-red-600 font-bold">
+                    <span>🇹🇷</span>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+            <form class="flex items-center w-48 border-b border-red-300">
+                <input aria-label="Search Fovart" class="search-input w-full text-sm py-1 px-2 outline-none" placeholder="Modern Sanat Galerisnde Ara" type="search"/>
+                <button class="text-gray-400 pr-1" type="submit">
+                    <i class="fas fa-search text-sm"></i>
+                </button>
+            </form>
+            <div class="flex items-center space-x-3 text-sm text-gray-700 social-icons">
+                <a aria-label="Facebook" class="hover:text-black" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Instagram" class="hover:text-black" href="#"><i class="fab fa-instagram"></i></a>
+                <a aria-label="Shopping cart" class="hover:text-black" href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <nav class="flex justify-center space-x-4 text-sm text-gray-600 font-['Roboto_Condensed'] mb-4 select-none">
+            <a class="nav-link hover:text-red-400" href="index.html">Anasayfa</a>
+            <a aria-current="page" class="nav-link-active" href="#">Sanatçılar</a>
+            <a class="nav-link hover:text-red-400" href="hakkimizda.html">Hakkımızda</a>
+            <a class="nav-link hover:text-red-400" href="favori_eserler.html">Favori Eserler</a>
+            <a class="nav-link hover:text-red-400" href="favori_sanatcılar.html">Favori Sanatçılar</a>
+        </nav>
+        <!-- Section title -->
+        <div>
+            <span class="section-title">Sergiler</span>
+        </div>
+        <!-- Sergiler grid -->
+        <div class="max-w-xl mx-auto grid grid-cols-3 gap-x-4 gap-y-6">
+            <!-- 1st row -->
+            <img alt="Portrait of a girl in blue and pink lighting" class="sergi-resim col-span-1 object-cover w-full" src="images/1.jpg" />
+            <div class="col-span-1 text-center flex flex-col justify-center px-2">
+                <h3 class="title-text">Nastya Hasan</h3>
+                <p class="subtitle-text">Kişisel Karma Sergi</p>
+                <p class="desc-text">İlk başta, Nastya'nın tablolarında temsil ettiği şey oldukça gerçek ve sıradandır...</p>
+                <button class="btn-sergi mx-auto mt-1" onclick="window.location.href='sergide_gezinti.html';">Sergide Gezinti >></button>
+            </div>
+            <img alt="Landscape with fence and field under blue sky" class="sergi-resim col-span-1 object-cover w-full" src="images/2.jpeg" />
+            <!-- 2nd row -->
+            <img alt="Abstract colorful texture painting" class="sergi-resim col-span-1 object-cover w-full" src="images/3.jpg" />
+            <div class="col-span-1 text-center flex flex-col justify-center px-2">
+                <h3 class="title-text">Çevre Ödülleri Resim Sergisi<br/>Elisa Moretti</h3>
+                <p class="subtitle-text">Boğaziçi Üniversitesi</p>
+                <p class="desc-text">Boğaziçi Üniversitesi Elektroteknoloji Kulübü ve IEEE Öğrenci Kulübü iş birliği ile...</p>
+                <button class="btn-sergi mx-auto mt-1" onclick="window.location.href='sergide_gez2.html';">Sergide Gezinti >></button>
+            </div>
+            <img alt="Abstract painting with red and blue colors" class="sergi-resim col-span-1 object-cover w-full" src="images/4.jpg" />
+            <!-- 3rd row -->
+            <img alt="Portrait of a young man with black shirt" class="sergi-resim col-span-1 object-cover w-full" src="images/5.jpg" />
+            <div class="col-span-1 text-center flex flex-col justify-center px-2">
+                <h3 class="title-text">Marcela Torres</h3>
+                <p class="subtitle-text">Karma Kişisel Sergi</p>
+                <p class="desc-text">Sessiz filmlerden, edebiyattan, nostaljiden ve herkesin içinde bulunan sonsuz gizemden ilham almaktadır.</p>
+                <button class="btn-sergi mx-auto mt-1" onclick="window.location.href='sergide_gez3.html';">Sergide Gezinti >></button>
+            </div>
+            <img alt="Portrait of a woman with dark hair" class="sergi-resim col-span-1 object-cover w-full" src="images/6.jpeg" />
+            <!-- 4th row -->
+            <img alt="Portrait of a young man with black shirt" class="sergi-resim col-span-1 object-cover w-full" src="images/7.jpg" />
+            <div class="col-span-1 text-center flex flex-col justify-center px-2">
+                <h3 class="title-text">Hiroshi Tanaka</h3>
+                <p class="subtitle-text">Karma Kişisel Sergi</p>
+                <p class="desc-text">Sessiz filmlerden, edebiyattan, nostaljiden ve herkesin içinde bulunan sonsuz gizemden ilham almaktadır.</p>
+                <button class="btn-sergi mx-auto mt-1" onclick="window.location.href='sergide_gez4.html';">Sergide Gezinti >></button>
+            </div>
+            <img alt="Portrait of a woman with dark hair" class="sergi-resim col-span-1 object-cover w-full" src="images/8.jpg" />
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

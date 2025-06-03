@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kullanıcı Girişi - İstanbul Modern Sanat Galerisi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 16px;
+            background-image: url('https://example.com/skolyoz_background.jpg'); /* Arka plan resmi */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Tam ekran yüksekliği */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-md w-full p-6 bg-white rounded-lg shadow-lg">
+        <div class="flex flex-col items-center mb-6">
+            <img alt="İstanbul Modern Sanat Galerisi Logo" class="w-32 h-32 mb-2" src="https://storage.googleapis.com/a1aa/image/855d55c7-a41e-424b-1835-c28a246c4b6b.jpg" />
+            <p class="text-lg text-gray-800 font-semibold">İstanbul Modern Sanat Galerisi</p>
+            <p class="text-sm text-gray-500">Field of view!</p>
+        </div>
+        <h2 class="text-3xl font-semibold text-center mb-6 text-gray-800">Kullanıcı Girişi</h2>
+        <form id="loginForm">
+            <div class="mb-4">
+                <label for="username" class="block text-sm font-medium text-gray-700">Kullanıcı Adı</label>
+                <input type="text" id="username" class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-600" required />
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-sm font-medium text-gray-700">Şifre</label>
+                <input type="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-red-600" required />
+            </div>
+            <button type="submit" class="w-full bg-red-600 text-white font-semibold py-2 rounded-md hover:bg-red-700 transition duration-200">Giriş Yap</button>
+        </form>
+        <div class="flex justify-between mt-4">
+            <a href="#" class="text-sm text-red-600 hover:underline">Şifremi Unuttum?</a>
+            <a href="uye_ol.html" class="text-sm text-red-600 hover:underline">Üye Ol</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Formun varsayılan gönderimini engelle
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Kullanıcı bilgilerini localStorage'a kaydet
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password); // Şifreyi saklamak genellikle önerilmez, bu sadece örnek amaçlıdır.
+
+            // Giriş başarılı olduğunda yönlendirme
+            window.location.href = 'index.html'; // Anasayfaya yönlendirme
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

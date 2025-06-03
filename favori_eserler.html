@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>İstanbul Modern Sanat Galerisi - Favori Eserler</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 16px;
+        }
+    </style>
+    <!-- javascript kodun-->
+    <script>
+        function showAlert(artTitle) {
+            alert(`"${artTitle}" eseri hakkında daha fazla bilgi alıyorsunuz.`);
+        }
+    </script>
+    <!--javascript kodu-->
+
+     
+</head>
+<body class="bg-white text-gray-700">
+    <div class="max-w-[1200px] mx-auto pt-12 px-6">
+        <div class="flex flex-col items-center mb-8">
+            <img
+                alt="Modern minimalist logo of İstanbul Modern Sanat Galerisi"
+                class="w-32 h-32"
+                src="https://storage.googleapis.com/a1aa/image/855d55c7-a41e-424b-1835-c28a246c4b6b.jpg"
+            />
+            <h1 class="text-3xl font-semibold mt-4 text-gray-900">Favori Eserler</h1>
+            <p class="text-center max-w-xl text-gray-600 mt-2 text-lg leading-relaxed">
+                İstanbul Modern Sanat Galerisi'nin seçkin koleksiyonundan, sanatseverlerin en çok beğendiği ve ilham aldığı eserler.
+            </p>
+        </div>
+         <nav class="flex justify-center space-x-6 text-base font-medium text-gray-600 border-b border-gray-300 pb-3 mb-10">
+            <a href="index.html" class="text-red-600 font-semibold">Anasayfa</a>
+            <a href="deneme.html" class="hover:text-red-600">Sanatçılar</a>
+            <a href="hakkimizda.html" class="hover:text-red-600">Hakkımızda</a>
+            <a href="favori_eserler.html" class="hover:text-red-600">Favori Eserler</a>
+            <a href="favori_sanatcılar.html" class="hover:text-red-600">Favori Sanatçılar</a>
+        </nav>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Abstract painting with vibrant red and orange swirls by Elisa Moretti"
+                    class="w-full h-64 object-cover"
+                    src="images/15.jpeg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Renklerin Dansı')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Renklerin Dansı</h3>
+                    <p class="text-gray-600 text-sm">Elisa Moretti</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Figurative portrait of a woman with soft blue background by Marcela Torres"
+                    class="w-full h-64 object-cover"
+                    src="images/16.jpg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Melankoli')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Melankoli</h3>
+                    <p class="text-gray-600 text-sm">Marcela Torres</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Minimalist abstract artwork with soft beige and cream tones by Hiroshi Tanaka"
+                    class="w-full h-64 object-cover"
+                    src="images/17.jpg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Sadelik ve Dinginlik')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Sadelik ve Dinginlik</h3>
+                    <p class="text-gray-600 text-sm">Hiroshi Tanaka</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Abstract painting with layered pastel colors and organic forms by Elisa Moretti"
+                    class="w-full h-64 object-cover"
+                    src="images/18.jpg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Organik Rüyalar')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Organik Rüyalar</h3>
+                    <p class="text-gray-600 text-sm">Elisa Moretti</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Powerful female portrait with bold brush strokes by Marcela Torres"
+                    class="w-full h-64 object-cover"
+                    src="images/19.jpg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Güç ve Melankoli')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Güç ve Melankoli</h3>
+                    <p class="text-gray-600 text-sm">Marcela Torres</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Modern minimalist artwork with muted earth tones by Hiroshi Tanaka"
+                    class="w-full h-64 object-cover"
+                    src="images/20.jpg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Doğanın Sesi')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Doğanın Sesi</h3>
+                    <p class="text-gray-600 text-sm">Hiroshi Tanaka</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Abstract art with bold black and white contrast by Elisa Moretti"
+                    class="w-full h-64 object-cover"
+                    src="images/1.jpg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Kontrastlar')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Kontrastlar</h3>
+                    <p class="text-gray-600 text-sm">Elisa Moretti</p>
+                </div>
+            </div>
+
+            <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <img
+                    alt="Figurative contemplative woman with earthy tones by Marcela Torres"
+                    class="w-full h-64 object-cover"
+                    src="images/15.jpeg"
+                    width="400"
+                    height="256"
+                    onclick="showAlert('Düşünce')"
+                />
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Düşünce</h3>
+                    <p class="text-gray-600 text-sm">Marcela Torres</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

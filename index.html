@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>İstanbul Modern Sanat Galerisi - Anasayfa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+    <div class="max-w-[1200px] mx-auto pt-12 px-6">
+        <header class="flex justify-between items-center mb-10">
+            <img alt="Modern minimalist logo of İstanbul Modern Sanat Galerisi" class="w-32 h-32" src="https://storage.googleapis.com/a1aa/image/855d55c7-a41e-424b-1835-c28a246c4b6b.jpg" />
+            <h1 class="text-3xl font-semibold text-gray-900">İstanbul Modern Sanat Galerisi</h1>
+            <div class="flex items-center space-x-4 text-gray-700 social-icons">
+                <a aria-label="Facebook" class="hover:text-black text-2xl" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Instagram" class="hover:text-black text-2xl" href="#"><i class="fab fa-instagram"></i></a>
+                <a aria-label="User " class="hover:text-black text-2xl" href="giris.html"><i class="fas fa-user"></i></a>
+                <a aria-label="Shopping cart" class="hover:text-black text-2xl" href="#"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+        </header>
+
+        <nav class="flex justify-center space-x-6 text-base font-medium text-gray-600 border-b border-gray-300 pb-3 mb-10">
+            <a href="#" class="text-red-600 font-semibold">Anasayfa</a>
+            <a href="deneme.html" class="hover:text-red-600">Sanatçılar</a>
+            <a href="hakkimizda.html" class="hover:text-red-600">Hakkımızda</a>
+            <a href="favori_eserler.html" class="hover:text-red-600">Favori Eserler</a>
+            <a href="favori_sanatcılar.html" class="hover:text-red-600">Favori Sanatçılar</a>
+        </nav>
+
+        <section class="mb-6 text-center">
+            <h2 class="text-xl font-semibold text-gray-900">Hoş geldin, <span id="usernameDisplay" class="text-red-600 font-bold"></span>!</h2>
+            <button id="logoutButton" class="mt-4 bg-red-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-red-700 transition duration-200">Çıkış Yap</button>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-900 text-center">Güncel Sergiler</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                    <img alt="Contemporary abstract art exhibition poster" class="w-full h-64 object-cover" src="images/12.jpg" width="400" height="256" />
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Renklerin Ötesinde</h3>
+                        <p class="text-gray-600 text-sm">Elisa Moretti'nin soyut eserlerinden oluşan sergi</p>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                    <img alt="Figurative art exhibition poster" class="w-full h-64 object-cover" src="images/13.jpg" width="400" height="256" />
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Duyguların İzinde</h3>
+                        <p class="text-gray-600 text-sm">Marcela Torres'un figüratif ve duygusal portreleri</p>
+                    </div>
+                </div>
+                <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                    <img alt="Minimalist art exhibition poster" class="w-full h-64 object-cover" src="images/14.jpg" width="400" height="256" />
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Sadelikte Güzellik</h3>
+                        <p class="text-gray-600 text-sm">Hiroshi Tanaka'nın modern minimalist eserleri</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-900 text-center">Öne Çıkan Sanatçılar</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <a href="#" class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Portrait of Elisa Moretti" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/a1aa/image/35c2c45a-2e60-45c8-2c6b-4281bec2b2ad.jpg" width="400" height="256" />
+                    <div class="p-4 bg-white">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Elisa Moretti</h3>
+                        <p class="text-gray-600 text-sm">Soyut Ressam</p>
+                    </div>
+                </a>
+                <a href="#" class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Portrait of Marcela Torres" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/a1aa/image/9d2620dc-07ea-4dfe-9316-b64256faafb4.jpg" width="400" height="256" />
+                    <div class="p-4 bg-white">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Marcela Torres</h3>
+                        <p class="text-gray-600 text-sm">Figüratif ve Duygusal Sanat</p>
+                    </div>
+                </a>
+                <a href="#" class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Portrait of Hiroshi Tanaka" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/a1aa/image/5007cd52-02bc-474a-a943-a6b0cf19f12f.jpg" width="400" height="256" />
+                    <div class="p-4 bg-white">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Hiroshi Tanaka</h3>
+                        <p class="text-gray-600 text-sm">Modern Minimalist Ressam</p>
+                    </div>
+                </a>
+                <a href="#" class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img alt="Portrait of Sofia Martinez" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/a1aa/image/3f6cbfa4-db4b-4a38-82ca-9f3641d6a132.jpg" width="400" height="256" />
+                    <div class="p-4 bg-white">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Sofia Martinez</h3>
+                        <p class="text-gray-600 text-sm">Çağdaş Sanatçı</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-900 text-center">Sanat Haberleri</h2>
+            <div class="space-y-6 max-w-3xl mx-auto">
+                <article class="border border-gray-300 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Yeni Sergi: Renklerin Ötesinde</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        İstanbul Modern, Elisa Moretti'nin soyut eserlerinden oluşan yeni sergisine ev sahipliği yapıyor. Sergi, 15 Temmuz'dan itibaren ziyaretçilere açık olacak.
+                    </p>
+                </article>
+                <article class="border border-gray-300 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Marcela Torres ile Söyleşi</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Ünlü figüratif sanatçı Marcela Torres, 5 Ağustos'ta İstanbul Modern'de sanatseverlerle buluşacak. Etkinlikte sanatçının ilham kaynakları ve eserleri konuşulacak.
+                    </p>
+                </article>
+                <article class="border border-gray-300 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold mb-2 text-red-600">Minimalizm Atölyesi</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Hiroshi Tanaka'nın rehberliğinde gerçekleşecek minimalizm atölyesi, 20 Ağustos'ta sanatseverlere minimalist sanatın inceliklerini öğretecek.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <footer class="text-center text-gray-500 text-sm py-6 border-t border-gray-300">
+            &copy; 2024 İstanbul Modern Sanat Galerisi. Tüm hakları saklıdır.
+        </footer>
+    </div>
+
+    <script>
+        // Sayfa yüklendiğinde kullanıcı adını göster
+        window.onload = function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('usernameDisplay').textContent = username;
+            } else {
+                document.getElementById('usernameDisplay').textContent = 'Ziyaretçi';
+            }
+        };
+
+        // Çıkış butonuna tıklandığında
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            localStorage.removeItem('username');
+            localStorage.removeItem('password'); // Şifreyi de temizle
+            
+            window.location.href = 'giris.html'; // Giriş sayfasına yönlendir
+        });
+    </script>
+</body>
+</html>
+

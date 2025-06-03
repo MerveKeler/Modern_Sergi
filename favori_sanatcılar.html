@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>İstanbul Modern Sanat Galerisi - Favori Sanatçılar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function showAlert(artistName) {
+            alert(`"${artistName}" hakkında daha fazla bilgi alıyorsunuz.`);
+        }
+    </script>
+</head>
+ 
+<body class="bg-white text-gray-700">
+    <div class="max-w-[1200px] mx-auto pt-12 px-6">
+        <div class="flex flex-col items-center mb-8">
+            <img alt="Modern minimalist logo of İstanbul Modern Sanat Galerisi" class="w-32 h-32" src="https://storage.googleapis.com/a1aa/image/855d55c7-a41e-424b-1835-c28a246c4b6b.jpg"/>
+            <h1 class="text-3xl font-semibold mt-4 text-gray-900">Favori Sanatçılar</h1>
+            <p class="text-center max-w-xl text-gray-600 mt-2 text-lg leading-relaxed">
+                İstanbul Modern Sanat Galerisi'nin en çok sevilen ve takip edilen sanatçıları.
+            </p>
+             <nav class="flex justify-center space-x-6 text-base font-medium text-gray-600 border-b border-gray-300 pb-3 mb-10">
+            <a href="index.html" class="text-red-600 font-semibold">Anasayfa</a>
+            <a href="deneme.html" class="hover:text-red-600">Sanatçılar</a>
+            <a href="hakkimizda.html" class="hover:text-red-600">Hakkımızda</a>
+            <a href="favori_eserler.html" class="hover:text-red-600">Favori Eserler</a>
+            <a href="favori_sanatcılar.html" class="hover:text-red-600">Favori Sanatçılar</a>
+        </nav>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <a class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" href="#" onclick="showAlert('Elisa Moretti')">
+                <img alt="Portrait of Elisa Moretti" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="256" src="https://storage.googleapis.com/a1aa/image/35c2c45a-2e60-45c8-2c6b-4281bec2b2ad.jpg" width="400"/>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Elisa Moretti</h3>
+                    <p class="text-gray-600 text-sm">Soyut Ressam</p>
+                </div>
+            </a>
+            <a class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" href="#" onclick="showAlert('Marcela Torres')">
+                <img alt="Portrait of Marcela Torres" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="256" src="https://storage.googleapis.com/a1aa/image/9d2620dc-07ea-4dfe-9316-b64256faafb4.jpg" width="400"/>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Marcela Torres</h3>
+                    <p class="text-gray-600 text-sm">Figüratif ve Duygusal Sanat</p>
+                </div>
+            </a>
+            <a class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" href="#" onclick="showAlert('Hiroshi Tanaka')">
+                <img alt="Portrait of Hiroshi Tanaka" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="256" src="https://storage.googleapis.com/a1aa/image/5007cd52-02bc-474a-a943-a6b0cf19f12f.jpg" width="400"/>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Hiroshi Tanaka</h3>
+                    <p class="text-gray-600 text-sm">Modern Minimalist Ressam</p>
+                </div>
+            </a>
+            <a class="group border border-gray-300 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300" href="#" onclick="showAlert('Sofia Martinez')">
+                <img alt="Portrait of Sofia Martinez" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" height="256" src="https://storage.googleapis.com/a1aa/image/3f6cbfa4-db4b-4a38-82ca-9f3641d6a132.jpg" width="400"/>
+                <div class="p-4 bg-white">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Sofia Martinez</h3>
+                    <p class="text-gray-600 text-sm">Çağdaş Sanatçı</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
